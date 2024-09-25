@@ -1,0 +1,255 @@
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Logo Styles */
+.logo h1 {
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo h1 span {
+    color: #ff6347; /* Tomato color for emphasis */
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('bg.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+/* Overlay for darkening the background image */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+/* Hero Content Styling */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* CTA Button */
+.hero-cta-btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-cta-btn:hover {
+    background-color: #ff4500; /* Darker on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5em;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2em;
+    }
+
+    .hero-cta-btn {
+        font-size: 1em;
+        padding: 12px 30px;
+    }
+}
+
+
+/* Menu Section */
+.menu-section {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item p {
+    font-size: 1.2em;
+}
+
+.menu-item span {
+    font-size: 1.2em;
+    color: #ff6347;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+/* Cart Section */
+.cart-section {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cart-section h3 {
+    margin-top: 20px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+
+/* Align price, quantity input, and button in one row */
+.item-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjusts space between elements */
+}
+/* General styling for the menu section */
+.menu-category h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+/* Styling for the price */
+.item-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Styling for the quantity input box */
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Styling for the Add to Cart button */
+.add-to-cart-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #e5533d;
+}

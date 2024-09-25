@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mstyles.css">
+    <title>Menu - Food Ordering</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <h1><a href="#">Foodie<span>Hub</span></a></h1>
+            </div>
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#">Order Now</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Satisfy Your Hunger in Minutes!</h1>
+            <p class="hero-subtitle">Fresh, fast, and delivered right to your door.</p>
+            <a href="#" class="hero-cta-btn">Order Your Meal</a>
+        </div>
+    </section>
+   
+
+    <!-- Menu Sections -->
+    <section class="menu-section" id="menu">
+        <div class="">
+            <h2>Our Menu</h2>
+
+
+                        <!-- Burger Section -->
+            <div class="menu-category">
+                <h3>Burgers</h3>
+
+                <!-- Cheese Burger -->
+                <div class="menu-item">
+                    <p>Cheese Burger</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹199</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="burger-1">
+                        <button class="add-to-cart-btn" onclick="addToCart('Cheese Burger', 199, 'burger-1')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Double Cheese Burger -->
+                <div class="menu-item">
+                    <p>Double Cheese Burger</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹249</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="burger-2">
+                        <button class="add-to-cart-btn" onclick="addToCart('Double Cheese Burger', 249, 'burger-2')">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- BBQ Bacon Burger -->
+                <div class="menu-item">
+                    <p>BBQ Bacon Burger</p>
+                    <div class="item-controls">
+                        <span class="item-price"> ₹299</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="burger-3">
+                        <button class="add-to-cart-btn" onclick="addToCart('BBQ Bacon Burger', 299, 'burger-3')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Veggie Burger -->
+                <div class="menu-item">
+                    <p>Veggie Burger</p>
+                    <div class="item-controls">
+                        <span class="item-price"> ₹179</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="burger-4">
+                        <button class="add-to-cart-btn" onclick="addToCart('Veggie Burger', 179, 'burger-4')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Spicy Chicken Burger -->
+                <div class="menu-item">
+                    <p>Spicy Chicken Burger</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹249</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="burger-5">
+                        <button class="add-to-cart-btn" onclick="addToCart('Spicy Chicken Burger', 249, 'burger-5')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Mushroom Swiss Burger -->
+                <div class="menu-item">
+                    <p>Mushroom Swiss Burger</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹279</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="burger-6">
+                        <button class="add-to-cart-btn" onclick="addToCart('Mushroom Swiss Burger', 279, 'burger-6')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Classic Burger -->
+                <div class="menu-item">
+                    <p>Classic Burger</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹189</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="burger-7">
+                        <button class="add-to-cart-btn" onclick="addToCart('Classic Burger', 189, 'burger-7')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Bacon Cheeseburger -->
+                <div class="menu-item">
+                    <p>Bacon Cheeseburger</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹349</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="burger-8">
+                        <button class="add-to-cart-btn" onclick="addToCart('Bacon Cheeseburger', 349, 'burger-8')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Jalapeño Burger -->
+                <div class="menu-item">
+                    <p>Jalapeño Burger</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹299</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="burger-9">
+                        <button class="add-to-cart-btn" onclick="addToCart('Jalapeño Burger', 299, 'burger-9')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Texas Burger -->
+                <div class="menu-item">
+                    <p>Texas Burger</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹399</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="burger-10">
+                        <button class="add-to-cart-btn" onclick="addToCart('Texas Burger', 399, 'burger-10')">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <!-- Add more items... -->
+            </div>
+
+
+               
+
+            <!-- Pizza Section -->
+            <div class="menu-category">
+                <h3>Pizzas</h3>
+
+                <!-- Margherita Pizza -->
+                <div class="menu-item">
+                    <p>Margherita Pizza</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹299</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="pizza-1">
+                        <button class="add-to-cart-btn" onclick="addToCart('Margherita Pizza', 299, 'pizza-1')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Pepperoni Pizza -->
+                <div class="menu-item">
+                    <p>Pepperoni Pizza</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹399</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="pizza-2">
+                        <button class="add-to-cart-btn" onclick="addToCart('Pepperoni Pizza', 399, 'pizza-2')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- BBQ Chicken Pizza -->
+                <div class="menu-item">
+                    <p>BBQ Chicken Pizza</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹449</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="pizza-3">
+                        <button class="add-to-cart-btn" onclick="addToCart('BBQ Chicken Pizza', 449, 'pizza-3')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Veggie Supreme Pizza -->
+                <div class="menu-item">
+                    <p>Veggie Supreme Pizza</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹349</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="pizza-4">
+                        <button class="add-to-cart-btn" onclick="addToCart('Veggie Supreme Pizza', 349, 'pizza-4')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Hawaiian Pizza -->
+                <div class="menu-item">
+                    <p>Hawaiian Pizza</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹419</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="pizza-5">
+                        <button class="add-to-cart-btn" onclick="addToCart('Hawaiian Pizza', 419, 'pizza-5')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Four Cheese Pizza -->
+                <div class="menu-item">
+                    <p>Four Cheese Pizza</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹499</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="pizza-6">
+                        <button class="add-to-cart-btn" onclick="addToCart('Four Cheese Pizza', 499, 'pizza-6')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Meat Lovers Pizza -->
+                <div class="menu-item">
+                    <p>Meat Lovers Pizza</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹599</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="pizza-7">
+                        <button class="add-to-cart-btn" onclick="addToCart('Meat Lovers Pizza', 599, 'pizza-7')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Tandoori Chicken Pizza -->
+                <div class="menu-item">
+                    <p>Tandoori Chicken Pizza</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹479</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="pizza-8">
+                        <button class="add-to-cart-btn" onclick="addToCart('Tandoori Chicken Pizza', 479, 'pizza-8')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Mexican Fiesta Pizza -->
+                <div class="menu-item">
+                    <p>Mexican Fiesta Pizza</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹389</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="pizza-9">
+                        <button class="add-to-cart-btn" onclick="addToCart('Mexican Fiesta Pizza', 389, 'pizza-9')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Paneer Tikka Pizza -->
+                <div class="menu-item">
+                    <p>Paneer Tikka Pizza</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹359</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="pizza-10">
+                        <button class="add-to-cart-btn" onclick="addToCart('Paneer Tikka Pizza', 359, 'pizza-10')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salad Section -->
+            <div class="menu-category">
+                <h3>Salads</h3>
+
+                <!-- Caesar Salad -->
+                <div class="menu-item">
+                    <p>Caesar Salad</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹199</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="salad-1">
+                        <button class="add-to-cart-btn" onclick="addToCart('Caesar Salad', 199, 'salad-1')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Greek Salad -->
+                <div class="menu-item">
+                    <p>Greek Salad</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹249</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="salad-2">
+                        <button class="add-to-cart-btn" onclick="addToCart('Greek Salad', 249, 'salad-2')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Chicken Salad -->
+                <div class="menu-item">
+                    <p>Chicken Salad</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹299</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="salad-3">
+                        <button class="add-to-cart-btn" onclick="addToCart('Chicken Salad', 299, 'salad-3')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Cobb Salad -->
+                <div class="menu-item">
+                    <p>Cobb Salad</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹349</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="salad-4">
+                        <button class="add-to-cart-btn" onclick="addToCart('Cobb Salad', 349, 'salad-4')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Tabbouleh Salad -->
+                <div class="menu-item">
+                    <p>Tabbouleh Salad</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹269</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="salad-5">
+                        <button class="add-to-cart-btn" onclick="addToCart('Tabbouleh Salad', 269, 'salad-5')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Fruit Salad -->
+                <div class="menu-item">
+                    <p>Fruit Salad</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹229</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="salad-6">
+                        <button class="add-to-cart-btn" onclick="addToCart('Fruit Salad', 229, 'salad-6')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Tuna Salad -->
+                <div class="menu-item">
+                    <p>Tuna Salad</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹319</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="salad-7">
+                        <button class="add-to-cart-btn" onclick="addToCart('Tuna Salad', 319, 'salad-7')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Asian Chicken Salad -->
+                <div class="menu-item">
+                    <p>Asian Chicken Salad</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹379</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="salad-8">
+                        <button class="add-to-cart-btn" onclick="addToCart('Asian Chicken Salad', 379, 'salad-8')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Garden Salad -->
+                <div class="menu-item">
+                    <p>Garden Salad</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹189</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="salad-9">
+                        <button class="add-to-cart-btn" onclick="addToCart('Garden Salad', 189, 'salad-9')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Quinoa Salad -->
+                <div class="menu-item">
+                    <p>Quinoa Salad</p>
+                    <div class="item-controls">
+                        <span class="item-price">₹359</span>
+                        <input type="number" min="1" value="1" class="quantity-input" id="salad-10">
+                        <button class="add-to-cart-btn" onclick="addToCart('Quinoa Salad', 359, 'salad-10')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section" id="cart">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <h3>Total: <span id="total-price">0.00</span></h3>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>
